@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{/*#ad192a #e4b78f #f1e8ea #d88d96 #eab1b9 */
+  --primary-color: #d90429;
+  --secondary-color: #ef233c;
+  --main-font-color: rgb(34, 34, 34);
+  --name_1: #edf2f4;
+  --name_2: #8d99ae;
+  --name_3: #2b2d42;
+}
+body{
+  font-family: "Abel", Arial, Helvetica, sans-serif;
+  color: var(--main-font-color);
+  background: var(--name_1);
+}
+.header-container{
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.header-container a{
+  text-decoration: none;
+  color: var(--name_1);
+  background: var(--name_3);
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: smaller;
+}
+.section-container{
+  background: var(--name_1);
+  border-radius: 20px;
+}
+.banner-container{
+  margin-top: 60%;
+  background: var(--primary-color);
+  color: var(--name_1);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.banner h1{
+  margin: 15px 0 10px;
+}
+.banner p{
+  font-size: smaller;
+  margin-bottom: 20px;
+}
+.dish-image{
+  margin-bottom: 10px;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 1px;
+  z-index: -1;
+  cursor: pointer;
+  display: block;
+}
+.desc-container{
+  padding: 15px;
+}
+.button-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin: 0 15px;
+}
+.button-container button{
+  padding: 8px 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background: var(--name_3);
+  color: var(--name_1);
+  cursor: pointer;
+  border-radius: 3px;
+}
+.button-container .socials{
+  display: flex;
+  justify-content: space-around;
+}
+.desc-container p{
+  margin-top: 15px;
+}
+.tags-button-container{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.tags-button-container button{
+  padding: 5px 10px;
+  margin: 5px 15px;
+  border: none;
+  background: var(--secondary-color);
+  color: var(--name_1);
+}
+.tags-margin{
+  margin-bottom: 25px;
+}
+
+
+.footer-container{
+  background: #fff;
+  width: 100%;
+  padding: 5px 0;
+  z-index: 1;
+  bottom: .5px;
+  position: fixed;
+}
+.btn-container{
+  display: flex;
+  justify-content: space-around;
+}
+.btn-container button{
+  display: grid;
+  grid-row-gap: 5px;
+  padding: 10px 5px;
+  border: none;
+  background: transparent;
+  font-size: 10px;
+  color: var(--main-font-color);
+}
+.btn-container i, a{
+  font-size: 18px;
+  color: var(--main-font-color);
+}
+.btn-container button .active{
+  color: var(--secondary-color);
+}

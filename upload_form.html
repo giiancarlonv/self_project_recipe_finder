@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/share_recipe.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+  <title>upload recipe</title>
+</head>
+<body>
+  <button onclick="resetStorage()">HOY</button> 
+  <section class="main-wrapper">
+    <div class="form-container">
+      <h2>Share your recipe with others</h2>
+      <div class="label_text">
+       Recipe title
+       <input type="text" placeholder="Hamburger Steak with Onion" class="js-dish-name">
+      </div>
+    
+      <div class="label_text">
+        Recipe description
+        <textarea name="wtf" id="" rows="5" placeholder="Write here..." class="js-dish-desc"></textarea>
+      </div>
+         
+       <div class="label-image">
+        Add image
+        <div class="upload-image">
+          <input type="file" name="image" accept="image/*" onchange="showPreview(event)" class="input-file" > 
+          <img src="" alt="" class="prev-image prev-image-hidden" id="image-preview">
+        </div>
+       
+       </div>
+       
+       <div class="label_text">
+        Tags
+        <input type="text" placeholder="Pizza, Ice cream, Soup," class="js-dish-tags">
+       </div>
+       <div class="label_text">
+        Add video
+        <input type="text">
+       </div>
+
+       <div>
+        <div class="label_text_direction">
+          Directions
+          <div class="direction">
+            <textarea name="" id="" rows="5" class="js-dish-direction"></textarea>
+          </div>
+          <div class="add-filed-btn">
+            <button class="js-add-direction">Add Field</button>
+          </div>
+        </div>
+       </div>
+
+      <div class="add-">
+        <strong>Add ingredients</strong>
+        <div class="">
+          <div class="add-ingredients-container js-ingredients">
+            <div class="">
+              <p>Ingredient name</p>
+              
+              <input type="text" name="" id="" placeholder="garlic" class="js-ingredient-name">
+            </div>
+            <div class="">
+              <p>Ingredient amount</p>
+              <input type="text" name="" id="" placeholder="1 clove" class="js-ingredient-amount">
+            </div>
+          </div>
+          
+        </div>
+        <button class="js-add-ingredients">Add field</button>
+      </div>
+       <!-- <div>
+          Cook Time
+          <select>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>-->
+        <div class="submit-btn">
+          <button class="js-submit-recipe-btn">Submit Recipe</button>
+        </div>
+      </div>
+  </section>
+  
+  <footer class="footer-container">
+    <div class="btn-container">
+      <button>
+      <a href="index.html"><i class="fa fa-home active"></i></a>
+      home
+      </button>
+
+      <button>
+        <a href=""><i class="fa fa-chart-bar"></i></a>
+        statistics
+      </button>
+    
+      <button>
+        <a href=""><i class="fa fa-list"></i></a>recipes
+      </button>
+
+      <button><a href=""><i class="fa fa-user"></i></a>profile</button>
+    </div>
+  </footer>
+  
+  <script src="https://kit.fontawesome.com/2643cb8b6d.js" crossorigin="anonymous"></script>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

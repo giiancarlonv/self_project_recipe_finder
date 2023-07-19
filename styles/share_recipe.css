@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{/*#ad192a #e4b78f #f1e8ea #d88d96 #eab1b9 */
+  --primary-color: #d90429;
+  --secondary-color: #ef233c;
+  --main-font-color: rgb(34, 34, 34);
+  --name_1: #edf2f4;
+  --name_2: #8d99ae;
+  --name_3: #2b2d42;
+}
+body{
+  font-family: "Abel", Arial, Helvetica, sans-serif;
+  color: var(--main-font-color);
+  background: var(--name_3);
+}
+.main-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.form-container{
+  background: var(--name_1);
+  padding: 50px 10px;
+  border-radius: 30px;
+}
+.form-container h2{
+  font-size: large;
+}
+.label_text{
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  font-size: small;
+}
+.upload-image{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+.prev-image{
+  width: 120px;
+  border-radius: 3px;
+}
+.label_text_direction{
+  display: flex;
+  flex-direction: column;
+}
+.label_text_direction textarea{
+  margin-top: 10px;
+  width: 93%;
+  padding: 5px 10px;
+}
+.label_text input, textarea{
+  margin-top: 10px;
+  padding: 5px 10px;
+  resize: none;
+}
+.add-{
+  font-size: 15px;
+}
+.add- button, .add-filed-btn button{
+  margin: 15px 0 8px;
+  padding: 8px 15px;
+  background: var(--name_3);
+  color: var(--name_1);
+  border: none;
+  border-radius: 20px;
+}
+.add- p{
+  margin-top: 5px;
+  font-size: smaller;
+  color: var(--name_3);
+}
+.add-ingredients-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+}
+.add-ingredients-container input{
+  margin-top: 10px;
+  padding: 3px 5px;
+}
+.submit-btn{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 5px;
+}
+.submit-btn button{
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  color: var(--name_1);
+  border-radius: 5px;
+  border: none;
+  background: var(--secondary-color);
+}
+.footer-container{
+  background: #fff;
+  width: 100%;
+  padding: 5px 0;
+  z-index: 1;
+  bottom: .5px;
+  position: fixed;
+}
+.btn-container{
+  display: flex;
+  justify-content: space-around;
+}
+.btn-container button{
+  display: grid;
+  grid-row-gap: 5px;
+  padding: 10px 5px;
+  border: none;
+  background: transparent;
+  font-size: 10px;
+  color: var(--main-font-color);
+}
+.btn-container i, a{
+  font-size: 18px;
+  color: var(--main-font-color);
+}
